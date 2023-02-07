@@ -198,7 +198,7 @@ public function updateAction()
         }
     }
 
-
+//https://localhost/ArticlesApi/index.php/article/create?title=hadasa&body=hello&published=02-05-2021"
     public function createAction()
 {
     $strErrorDesc = '';

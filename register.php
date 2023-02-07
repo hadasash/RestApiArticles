@@ -1,6 +1,6 @@
 <?php
 
-include_once("User.php");
+include_once("models/User.php");
 
 if (isset($_POST["userName"]) && !empty($_POST["userName"]) &&
     isset($_POST["password"]) && !empty($_POST["password"])) {

@@ -1,7 +1,7 @@
 <?php
-require ("ArticleController.php");
-require ("BaseController.php");
-require ("Article.php");
+require ("controller\ArticleController.php");
+require ("controller\BaseController.php");
+require ("models\Article.php");
 
 
 
