@@ -8,10 +8,13 @@ if (isset($_POST["userName"]) && !empty($_POST["userName"]) &&
     $password = $_POST["password"];
 
     $user = new User($userName, $password);
-   // $user->register();
-    if ($user->register()) {
+    try {
+        $user->register();
         // Redirect to the login page
         header("Location: login.php");
+    } catch (Exception $e) {
+        // User already exists
+        echo "User already exists";
     }
 } else {
     echo "Sign Up";
